@@ -6,4 +6,4 @@ spring:
 queue:
   name: message.queue
   consumer:
-    concurrency: 30-30
+    concurrency: 10-10
