@@ -32,4 +32,4 @@ This means 3 threads will be running and listening the queue at start up.
 * As another idea to reduce the delay of the actions, we can call related services as fire-and-forget by using Async methods.
 in SMSSender, send method is annotated with Async.
 
-* Test cases for concurrent consuming can be found in MessageReceiverIntegrationTest
+* Test cases for concurrent consuming can be found in EventReceiverIntegrationTest

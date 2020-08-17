@@ -41,7 +41,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @WebAppConfiguration
 @DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)
 @EnableAsync
-public class MessageReceiverIntegrationTest {
+public class EventReceiverIntegrationTest {
 
     @Autowired
     private WebApplicationContext webApplicationContext;

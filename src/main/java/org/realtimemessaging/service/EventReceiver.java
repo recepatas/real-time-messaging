@@ -8,9 +8,9 @@ import org.springframework.jms.annotation.JmsListener;
 import org.springframework.stereotype.Component;
 
 @Component
-public class MessageReceiver {
+public class EventReceiver {
 
-    private Logger logger = LoggerFactory.getLogger(MessageReceiver.class);
+    private Logger logger = LoggerFactory.getLogger(EventReceiver.class);
 
     @Autowired
     private EventSenderFactory eventSenderFactory;
