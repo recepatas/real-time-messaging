@@ -15,7 +15,7 @@ public class MessageReceiver {
     @Autowired
     private EventSenderFactory eventSenderFactory;
 
-    @JmsListener(destination = "${queue.name}", containerFactory = "myFactory")
+    @JmsListener(destination = "${queue.name}", containerFactory = "eventQueueJmsListenerFactory")
     public void receiveMessage(Event event) {
         logger.info("Received event: " + event);
 

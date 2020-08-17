@@ -21,7 +21,7 @@ public class QueueConfiguration {
     private String concurrency;
 
     @Bean
-    public JmsListenerContainerFactory<?> myFactory(ConnectionFactory connectionFactory, DefaultJmsListenerContainerFactoryConfigurer configurer) {
+    public JmsListenerContainerFactory<?> eventQueueJmsListenerFactory(ConnectionFactory connectionFactory, DefaultJmsListenerContainerFactoryConfigurer configurer) {
         DefaultJmsListenerContainerFactory factory = new DefaultJmsListenerContainerFactory();
 
         // set the concurrency level based on the configuration in application.yml to run concurrent consumers
