@@ -1,0 +1,14 @@
+server:
+  port: 8081
+spring:
+  activemq:
+    packages:
+      trustAll: true
+    broker-url: vm://embedded-broker?broker.persistent=false
+    in-memory: true
+    pool:
+      enabled: false
+queue:
+  name: message.queue
+  consumer:
+    concurrency: 10-20

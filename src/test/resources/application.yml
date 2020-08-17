@@ -1,0 +1,9 @@
+spring:
+  activemq:
+    broker-url: vm://embedded-broker?broker.persistent=false
+    packages:
+      trustAll: true
+queue:
+  name: message.queue
+  consumer:
+    concurrency: 30-30
