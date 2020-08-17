@@ -1,22 +1,27 @@
-# Softtech Real Time Messaging Case
+## Softtech Real Time Messaging Case
 Implemented with Java 8 + Spring Boot + Spring JMS
 
 ### Run project
+```
 mvn spring-boot:run
+```
 
 ### Adding new events
-POST API endpoint localhost:8081/events
+POST API endpoint [localhost:8081/events](localhost:8081/events)
 
 Example input
-
+```json
 {
 	"customerAddress": "recepatas@gmail.com",
 	"text": "test text message",
 	"actionType": "EMAIL"
 }
+```
 
 ### Run tests
+```
 mvn test
+```
 
 ### Implementation Details
 
